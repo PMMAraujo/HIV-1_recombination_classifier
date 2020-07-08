@@ -59,7 +59,7 @@ elif page == 'Documentation':
     st.header("Notes")
     st.write("The data set used can be found here:")
     st.write("The training and inference process can be consulted in the\
-        notebook here:")
+        notebook here (https://github.com/PMMAraujo/HIV-1_recombination_classifier/blob/master/model_creation_and_experimentation.ipynb)")
     st.write("The imput genomes for this classifier don't need to be previously\
         aligned")
     st.write("Since this is a toy example it should not be used for other\
