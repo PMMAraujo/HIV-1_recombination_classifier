@@ -45,21 +45,24 @@ if page == 'Classifier':
 elif page == 'Documentation':
 
     st.header("Preprocessing")
-    st.write('From the inputed genome the set of possible trigrams (ngrams of\
+    st.write("""From the inputed genome the set of possible trigrams (ngrams of\
         length 3) are created. Covering the 3 possible open reading frames.Each\
         trigrams were then tokenized using keras. Since genome may have diferent\
         lengths the tokenized inputs are then padded to length 3000. This data\
         in then passed on the neural net showed in the next step. This net,\
         containing an embedding layer, was trained on 103476 genomes (none B\
-        subtype) to classify HIV-1 genomes as recombinant or not.')
+        subtype) to classify HIV-1 genomes as recombinant or not.""")
 
     st.header("Classifier Neural Net Structure")
-    st.write('link')
+    st.markdown("![Alt Text](https://raw.githubusercontent.com/PMMAraujo/HIV-1_recombination_classifier/master/recombination_classifier/models_files/recomb_classifier_net.png)")
+#    st.write("""[<img src="https://github.com/madewithml/images/blob/master/images/yt.png?raw=true" style="width:1.2rem;"> Watch Lesson](https://www.youtube.com/madewithml?sub_confirmation=1)]""")
+#    st.write('[<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)]')
+
 
     st.header("Notes")
-    st.write("The data set used can be found here:")
+    st.write("The data set used can be found [here.](https://drive.google.com/file/d/1-Tim99TrSR8pGzLse3yN9sBBs08bFIlJ/view?usp=sharing)")
     st.write("The training and inference process can be consulted in the\
-        notebook [here](https://github.com/PMMAraujo/HIV-1_recombination_classifier/blob/master/model_creation_and_experimentation.ipynb)")
+        notebook [here.](https://github.com/PMMAraujo/HIV-1_recombination_classifier/blob/master/model_creation_and_experimentation.ipynb)")
     st.write("The imput genomes for this classifier don't need to be previously\
         aligned.")
     st.write("Since this is a toy example it should not be used for other\
