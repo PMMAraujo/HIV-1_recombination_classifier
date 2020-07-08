@@ -59,10 +59,10 @@ elif page == 'Documentation':
     st.header("Notes")
     st.write("The data set used can be found here:")
     st.write("The training and inference process can be consulted in the\
-        notebook here (https://github.com/PMMAraujo/HIV-1_recombination_classifier/blob/master/model_creation_and_experimentation.ipynb)")
+        notebook [here](https://github.com/PMMAraujo/HIV-1_recombination_classifier/blob/master/model_creation_and_experimentation.ipynb)")
     st.write("The imput genomes for this classifier don't need to be previously\
-        aligned")
+        aligned.")
     st.write("Since this is a toy example it should not be used for other\
-        purpose than this demonstration")
+        purpose than this demonstration.")
     st.write("Since this is a toy example information regarding the subtype B\
-        was not included in the creation of this classifier")
+        was not included in the creation of this classifier.")
