@@ -18,7 +18,6 @@ import pandas as pd
 
 
 INPUT = 'data/genomes_nonB.csv'
-#VOCAB_SIZE = 1665
 MAXLEN = 3000
 EMBEDDING_DIM = 50
 TEST_SIZE = 0.25
@@ -68,7 +67,7 @@ def create_model(vocab_size, embedding_dim=EMBEDDING_DIM, maxlen=MAXLEN):
 
 if __name__ == '__main__':
 
-    logging.basicConfig(filename='train.log', filemode='w', level=logging.INFO,
+    logging.basicConfig(filename='logs/train.log', filemode='w', level=logging.INFO,
                         format='%(name)s - %(levelname)s - %(message)s')
 
     log.info("Reading data")
