@@ -1,2 +1,5 @@
 genomes_nonB.csv
 .ipynb_checkpoints
+
+src/__pycache__/*
+logs/*
