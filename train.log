@@ -1,0 +1,5 @@
+__main__ - INFO - Reading data
+__main__ - INFO - Train-test split
+__main__ - INFO - Start of the preprocessing step
+src.preprocess - INFO - Creating trigrams from genomes
+src.preprocess - INFO - Creating tokens from trigrams
