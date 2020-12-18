@@ -3,7 +3,7 @@ sys.path.append(".")
 
 import streamlit as st
 
-from src import predict
+from recombination_classifier import predict
 
 
 # Title
