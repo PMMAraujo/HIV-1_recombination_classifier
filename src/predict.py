@@ -2,19 +2,15 @@ import sys
 sys.path.append(".")
 from argparse import ArgumentParser
 import pickle
-
 import logging
 log = logging.getLogger(__name__)
-
 from datetime import datetime
 
 import numpy as np
-
-from nltk import ngrams
-from keras.preprocessing.text import Tokenizer
-from keras.preprocessing.sequence import pad_sequences
-
 import tensorflow as tf
+from nltk import ngrams
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 
 VOCAB_SIZE = 1665
