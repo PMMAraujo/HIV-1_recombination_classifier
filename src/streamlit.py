@@ -8,10 +8,10 @@ from src import predict
 # Title
 st.title("HIV-1 recombination classifier")
 st.write("\n")
-st.write("This is an example of a HIV-1 recombination classifier using a \
-small neural net to train codon (triplets/trigrams) based embeddings. This\
-should not be used for other than demonstrating purposes. Please notice that\
-the training dataset for this classifier doesn't include subtype B data.")
+st.write("This is an example of a HIV-1 recombination classifier without the \
+need for preprocessing or alignment. The classifier is a small neural net \
+trained on 103476 HIV-1 genomes. This should not be used for other than \
+demonstrating purposes."
 
 # Get run components for prediction
 pred = 1
@@ -48,8 +48,9 @@ if page == 'Classifier':
 
     st.write("If you want to know more about this tool and how the result was  \
     produced please visit the Documentation page on the drop-down menu on \
-    the left.")
-    
+    the left. Please notice that the training dataset for this classifier \
+    doesn't include subtype B data.")
+
 elif page == 'Documentation':
 
     st.header("Preprocessing")
