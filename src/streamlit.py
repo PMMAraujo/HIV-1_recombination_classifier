@@ -31,17 +31,18 @@ if page == 'Classifier':
     pressed = st.button('RUN')
 
     # Predict
-    results = predict.make_pred(text)
+    if pressed:
+        results = predict.make_pred(text)
 
-    # Results
-    if results[0] == 0:
-        outcome = 'No evidence of recombination'
-    elif results[0] == 1:
-        outcome = 'Evidence of recombination'
-    else:
-        outcome = 'Error'
+        # Results
+        if results[0] == 0:
+            outcome = 'No evidence of recombination'
+        elif results[0] == 1:
+            outcome = 'Evidence of recombination'
+        else:
+            outcome = 'Error'
 
-    st.write("**Result**:", outcome)
+        st.write("**Result**:", outcome)
 
 
 elif page == 'Documentation':
