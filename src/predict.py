@@ -1,10 +1,9 @@
 import sys
 sys.path.append(".")
-import logging
-log = logging.getLogger(__name__)
-
 from argparse import ArgumentParser
 import pickle
+import logging
+log = logging.getLogger(__name__)
 from datetime import datetime
 
 import numpy as np
