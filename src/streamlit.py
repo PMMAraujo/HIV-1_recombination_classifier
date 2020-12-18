@@ -2,8 +2,7 @@ import sys
 sys.path.append(".")
 
 import streamlit as st
-
-from recombination_classifier import predict
+from src import predict
 
 
 # Title
@@ -15,7 +14,7 @@ the training dataset for this classifier doesn't include subtype B data.")
 
 
 # Get run components for prediction
-pred = 1
+#pred = 1
 
 # Pages
 page = st.sidebar.selectbox(

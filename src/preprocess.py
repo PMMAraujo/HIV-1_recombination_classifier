@@ -42,10 +42,7 @@ def trigrams_tokenizer(sentences_train, sentences_test, num_words):
 
     vocab_size = len(tokenizer.word_index) + 1
 
-    with open('./src/models_files/tokenizer.pickle', 'wb') as handle:
-        pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
-    return X_train, X_test, vocab_size
+    return X_train, X_test, vocab_size, tokenizer
 
 def padding(X_train, X_test, maxlen):
     log.info("Padding")
