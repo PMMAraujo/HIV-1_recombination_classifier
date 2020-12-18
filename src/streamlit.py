@@ -14,7 +14,7 @@ the training dataset for this classifier doesn't include subtype B data.")
 
 
 # Get run components for prediction
-#pred = 1
+pred = 1
 
 # Pages
 page = st.sidebar.selectbox(
