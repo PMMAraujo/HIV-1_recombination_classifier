@@ -12,17 +12,15 @@ from nltk import ngrams
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-
 VOCAB_SIZE = 1665
 NUM_WORDS = 5000
 MAXLEN = 3000
 EMBEDDING_DIM = 50
 
-
 def tokenize_form_file(NUM_WORDS, ngrams):
     log.info("Getting tokenizer")
 
-    with open('./src/models_files/tokenizer.pickle', 'rb') as handle:
+    with open('src/models_files/tokenizer.pickle', 'rb') as handle:
         tokenizer = pickle.load(handle)
 
     tokenized = tokenizer.texts_to_sequences(ngrams)
@@ -37,7 +35,7 @@ def make_pred(string_input):
     log.info("Start of preprocessing")
     # from string to trigrams
     in_tri = np.array([''.join(i) for i in ngrams(string_input, 3)])
-
+ 
     # tokenizing
     as_tokens = tokenize_form_file(NUM_WORDS, in_tri)
     as_tokens = [x for x in as_tokens if len(x) == 1]
@@ -65,7 +63,7 @@ if __name__ == '__main__':
     now = datetime.now()
     dt_string = now.strftime("%d%m%Y%H%M%S")
     
-    logging.basicConfig(filename=f'logs/{dt_string}_train.log', filemode='w',
+    logging.basicConfig(filename=f'logs/{dt_string}_predict.log', filemode='w',
                         level=logging.INFO,
                         format='%(name)s - %(levelname)s - %(message)s')
 
