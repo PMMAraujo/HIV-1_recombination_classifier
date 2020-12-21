@@ -5,7 +5,7 @@ import streamlit as st
 from src import predict
 
 from PIL import Image
-IMG_VIRUS = "images/virus01.png"
+IMG_VIRUS = "images/virus03.png"
 image = Image.open(IMG_VIRUS)
 
 # Title
