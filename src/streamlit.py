@@ -3,15 +3,15 @@ sys.path.append(".")
 
 import streamlit as st
 from src import predict
-from PIL import Image
 
-img_virus = "images/virus01.png"
+from PIL import Image
+IMG_VIRUS = "images/virus01.png"
 
 # Title
 st.title("HIV-1 recombination classifier")
 
-image = Image.open(img_virus)
-st.image(image)
+image = Image.open(IMG_VIRUS)
+st.image(image), st.markdown('Streamlit is **_really_ cool**.')
 
 st.write("\n")
 st.write("This is an example of a HIV-1 recombination classifier without the \
