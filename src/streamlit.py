@@ -9,7 +9,7 @@ img_virus = "https://raw.githubusercontent.com/PMMAraujo/HIV-1_recombination_cla
 # Title
 st.title("HIV-1 recombination classifier")
 
-image = Image.open('img_virus')
+image = Image.open(img_virus)
 st.image(image)
 
 st.write("\n")
