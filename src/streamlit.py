@@ -3,6 +3,7 @@ sys.path.append(".")
 
 import streamlit as st
 from src import predict
+from PIL import Image
 
 img_virus = "https://raw.githubusercontent.com/PMMAraujo/HIV-1_recombination_classifier/improve_web_app/images/virus01.png"
 
