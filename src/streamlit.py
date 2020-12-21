@@ -6,12 +6,12 @@ from src import predict
 
 from PIL import Image
 IMG_VIRUS = "images/virus01.png"
+image = Image.open(IMG_VIRUS)
 
 # Title
+st.image(image)
 st.title("HIV-1 recombination classifier")
-
-image = Image.open(IMG_VIRUS)
-st.image(image), st.markdown('Streamlit is **_really_ cool**.')
+st.image(image)
 
 st.write("\n")
 st.write("This is an example of a HIV-1 recombination classifier without the \
