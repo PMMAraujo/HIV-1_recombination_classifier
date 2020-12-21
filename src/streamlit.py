@@ -11,7 +11,7 @@ st.write("\n")
 st.write("This is an example of a HIV-1 recombination classifier without the \
 need for preprocessing or alignment. The classifier is a small neural net \
 trained on 103476 HIV-1 genomes. This should not be used for other than \
-demonstrating purposes."
+demonstrating purposes.")
 
 # Get run components for prediction
 pred = 1
