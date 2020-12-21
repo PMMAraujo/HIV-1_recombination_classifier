@@ -4,7 +4,7 @@ sys.path.append(".")
 import streamlit as st
 from src import predict
 
-img_virus = "https://github.com/PMMAraujo/HIV-1_recombination_classifier/tree/improve_web_app/imagesvirus01.png"
+img_virus = "https://raw.githubusercontent.com/PMMAraujo/HIV-1_recombination_classifier/improve_web_app/images/virus01.png"
 
 # Title
 st.title("HIV-1 recombination classifier")
