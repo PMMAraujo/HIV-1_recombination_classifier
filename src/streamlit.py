@@ -4,9 +4,14 @@ sys.path.append(".")
 import streamlit as st
 from src import predict
 
+img_virus = "https://github.com/PMMAraujo/HIV-1_recombination_classifier/tree/improve_web_app/imagesvirus01.png"
 
 # Title
 st.title("HIV-1 recombination classifier")
+
+image = Image.open('img_virus')
+st.image(image)
+
 st.write("\n")
 st.write("This is an example of a HIV-1 recombination classifier without the \
 need for preprocessing or alignment. The classifier is a small neural net \
