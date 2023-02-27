@@ -53,8 +53,8 @@ step. This net, containing an embedding layer, was trained on 103476 genomes\
 (none B subtype) to classify HIV-1 genomes as recombinant or not.""")
 
     st.header("Classifier Neural Net Structure")
-    st.markdown("![Alt Text](https://github.com/PMMAraujo/HIV-1_recombination_classifier/blob/2c3cf1c9ed2ddac7586888c9b09abaacb018ed69/src/models_files/recomb_classifier_net.png)")
-
+    image = Image.open('https://github.com/PMMAraujo/HIV-1_recombination_classifier/blob/2c3cf1c9ed2ddac7586888c9b09abaacb018ed69/src/models_files/recomb_classifier_net.png')
+    st.image(image)
 
     st.header("Notes")
     st.write("The data set used can be found [here.](https://drive.google.com/file/d/1-Tim99TrSR8pGzLse3yN9sBBs08bFIlJ/view?usp=sharing)")
